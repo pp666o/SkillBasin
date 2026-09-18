@@ -1,0 +1,152 @@
+{
+  "schema_version": 5,
+  "experiment_id": "gate_a_v5_test",
+  "status": "superseded_not_run",
+  "result_policy": "No result is claimed until all test shards pass integrity checks.",
+  "research_question": "Within the geometry-feasible pose set, does a frozen policy exhibit a policy-specific success basin, and is there measurable headroom between the strongest geometry-only pose and a sampled empirical policy oracle?",
+  "main_definitions": {
+    "p_train": "Audited demonstration SE(2) medoid. Used as a policy-familiarity reference, not as the definition of the optimum.",
+    "p_geom": "Highest preregistered geometry-only score among geometry-feasible sampled candidates; selected without policy outcomes.",
+    "p_oracle": "Highest empirical phase-2 policy success rate among the sampled geometry-feasible basin candidates.",
+    "H_geom": "S_val(p_oracle) - S_val(p_geom), measured with independent phase-3 paired validation seeds.",
+    "H_train": "S_val(p_oracle) - S_val(p_train), measured with independent phase-3 paired validation seeds.",
+    "empirical_basin": "Sampled geometry-feasible poses whose empirical phase-2 policy success rate is at least 0.80."
+  },
+  "geometry_score": {
+    "weights_source": "fixed before test evaluation; any tuning is calibration-split only",
+    "normalization": "per-scene min-max over P_e, equal weight",
+    "features": {
+      "minimum_task_trajectory_joint_margin": {
+        "weight": 1,
+        "direction": "higher"
+      },
+      "maximum_task_trajectory_IK_residual": {
+        "weight": 1,
+        "direction": "lower"
+      },
+      "minimum_task_approach_alignment": {
+        "weight": 1,
+        "direction": "higher"
+      },
+      "minimum_task_trajectory_manipulability": {
+        "weight": 1,
+        "direction": "higher"
+      },
+      "rendered_interaction_pixel_visibility": {
+        "weight": 1,
+        "direction": "higher"
+      }
+    },
+    "forbidden_inputs": [
+      "policy actions",
+      "policy rollout success or failure",
+      "test-scene success rates"
+    ]
+  },
+  "diagnostics_and_robustness": {
+    "p_train": "Training-demonstration pose; candidate-generation prior and sanity check only.",
+    "simulator_default": "Metadata only; used as p_train proxy only under an explicit debug flag.",
+    "geometry_ablations": [
+      "nearest_only",
+      "ik_only",
+      "visibility_only",
+      "manipulability_only"
+    ],
+    "S_geom_plus": "Post-hoc maximum validation SR among p_geom and all geometry ablations.",
+    "H_geom_plus": "S_val(p_oracle) - S_geom_plus; robustness result, not the Gate-A primary metric."
+  },
+  "tasks": [
+    "TurnOnStove",
+    "TurnOnSinkFaucet",
+    "TurnOnMicrowave"
+  ],
+  "test_scene_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "policy_seeds": [
+    1,
+    2,
+    3
+  ],
+  "candidate_protocol": {
+    "room_wide_generation": "0.10 m floor grid with seven target-facing headings; no fixed annulus",
+    "maximum_exact_filter_candidates": 2500,
+    "eligible_candidates_in_P_e": 48,
+    "ineligible_training_pose_is_an_additional_diagnostic": true,
+    "policy_local_translation_scales_m": [
+      0,
+      0.025,
+      0.05,
+      0.1,
+      0.2,
+      0.3
+    ],
+    "policy_local_heading_offsets_deg": [
+      -30,
+      -20,
+      -10,
+      -5,
+      0,
+      5,
+      10,
+      20,
+      30
+    ],
+    "round1": {
+      "policy_local": 16,
+      "task_domain_global": 10,
+      "boundary_or_far": 6
+    },
+    "round2_adaptive": {
+      "total": 16,
+      "near_top3": 6,
+      "success_failure_boundary": 4,
+      "success_threshold": 0.6666666667,
+      "failure_threshold": 0.3333333333,
+      "uncovered_domain": 4,
+      "escape_along_best_boundary_direction_or_far_from_train": 2
+    }
+  },
+  "eligibility": {
+    "base_collision_free": true,
+    "collision_penetration_tolerance_m": 0.002,
+    "ignored_support_contact_regex": "floor|ground",
+    "minimum_rendered_pixel_visibility": 0.5,
+    "all_task_trajectory_key_poses_reachable": true
+  },
+  "rollout_protocol": {
+    "search_rollouts_per_candidate": 3,
+    "promotion": "top 3 plus every candidate within 0.20 success rate of the search best",
+    "additional_search_rollouts_per_promoted_candidate": 17,
+    "independent_validation_rollouts_per_unique_evaluation_pose": 20,
+    "paired_seed_comparisons": true,
+    "search_and_validation_seed_ranges_are_disjoint": true
+  },
+  "inference": {
+    "unit": "task / policy seed / held-out scene",
+    "bootstrap": "resample policy seeds, scenes within policy seed, then paired validation seeds",
+    "bootstrap_samples": 20000,
+    "confidence_interval": 0.95
+  },
+  "gate_decision": {
+    "primary_headroom": "H_geom",
+    "minimum_effect": 0.1,
+    "minimum_oracle_success": 0.2,
+    "required_tasks_with_ci_lower_bound_at_or_above_effect": 2,
+    "test_split_only": true
+  },
+  "excluded_from_gate_a": [
+    "navigation endpoint baseline",
+    "Mobi-pi selector",
+    "N2M selector",
+    "SkillBasin selector"
+  ],
+  "superseded_by": "gate_a_v7_preregistered_manifest.json"
+}

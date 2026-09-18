@@ -1,0 +1,50 @@
+{
+  "TurnOnSinkFaucet": [
+    {
+      "task": "TurnOnSinkFaucet",
+      "scene_id": 1,
+      "p_ref_candidate_id": 0,
+      "p_near_candidate_id": 1,
+      "p_IK_candidate_id": 1,
+      "p_star_candidate_id": 0,
+      "p_ref_pose": [
+        2.7499861019615515,
+        -1.7999999993561486,
+        4.712296326794897
+      ],
+      "p_near_pose": [
+        2.48164787049458,
+        -1.6725696820349227,
+        -1.5707963267948934
+      ],
+      "p_IK_pose": [
+        2.48164787049458,
+        -1.6725696820349227,
+        -1.5707963267948934
+      ],
+      "p_star_pose": [
+        2.7499861019615515,
+        -1.7999999993561486,
+        4.712296326794897
+      ],
+      "p_ref_success_rate": 0.3333333333333333,
+      "p_near_success_rate": 0.0,
+      "p_IK_success_rate": 0.0,
+      "p_star_success_rate": 0.3333333333333333,
+      "eligible_candidates": 3,
+      "evaluated_rollouts": 12,
+      "generated_candidates": 32,
+      "successful_rollouts": 2,
+      "p_star_minus_p_near": 0.3333333333333333,
+      "p_star_minus_p_IK": 0.3333333333333333,
+      "p_star_minus_strongest_simple": 0.3333333333333333,
+      "p_star_minus_p_ref": 0.0,
+      "validation_rollouts_per_unique_baseline": 20,
+      "p_ref_validation_success_rate": 0.6,
+      "p_near_validation_success_rate": 0.05,
+      "p_IK_validation_success_rate": 0.05,
+      "p_star_validation_success_rate": 0.6,
+      "validation_p_star_minus_strongest_simple": 0.5499999999999999
+    }
+  ]
+}

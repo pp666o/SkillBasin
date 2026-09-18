@@ -1,0 +1,88 @@
+{
+  "experiment_id": "gate_a_20260912_r2",
+  "date": "2026-09-12",
+  "status": "complete_no_go_superseded_protocol",
+  "supersedes": [
+    "gate_a_20260912_r2",
+    "gate_a_v5_preregistered_manifest.json"
+  ],
+  "historical_results_must_not_be_reinterpreted_under_v3": true,
+  "scope_label": "enhanced_smoke_test_with_independent_validation",
+  "tasks": [
+    "TurnOnStove",
+    "TurnOnSinkFaucet"
+  ],
+  "scene_ids": [1, 4, 7],
+  "layout_style_pairing": "layout_id == style_id",
+  "policy": {
+    "family": "Mobi-pi bc_xfmr",
+    "seed": 1,
+    "dataset_variant": "mg-300",
+    "checkpoint_epoch": 1000,
+    "frozen": true
+  },
+  "evaluation": {
+    "candidate_count_per_scene": 32,
+    "search_rollouts_per_eligible_candidate": 3,
+    "validation_rollouts_per_unique_selected_pose": 20,
+    "horizon": 500,
+    "terminate_on_success": true,
+    "bootstrap_samples": 20000,
+    "bootstrap_seed": 20260912
+  },
+  "candidate_sampler": {
+    "reference_pose_included": true,
+    "radial_min_m": 0.65,
+    "radial_max_m": 1.35,
+    "radial_step_m": 0.1,
+    "bearing_step_deg": 15,
+    "heading_offsets_deg": [-30, -15, 0, 15, 30]
+  },
+  "eligibility": {
+    "base_collision_free": true,
+    "target_in_agentview_frustum": true,
+    "ik_max_iterations": 80,
+    "ik_position_tolerance_m": 0.08,
+    "ik_min_normalized_joint_margin": 0.05
+  },
+  "repository": {
+    "mobipi_commit": "19b130b8ada3f7e029918449c12d433e9e629ca1",
+    "robocasa_submodule": "3683fb01d6fc87d7849e7b5a886d01f4b1d7a55d",
+    "robomimic_submodule": "ff9f7f4157a5c8257f17c5910067030e2291378f"
+  },
+  "artifact_sha256": {
+    "eval_gate_a.py": "19a0d709045fe45496fefd76cf805c4d610f442a8f80394f34b5a74dbbdf4ee6",
+    "analyze_gate_a.py": "6cffbba3254ea6d3db5f19300fb4c74ddac4d7d7b104028d6c5151104df3d4ad",
+    "run_gate_a_parallel.sh": "92262cbdbb69f4c1a9c9070e0b832fffddc5729a68c7f6f3b1aeb707712cfc44",
+    "build_gate_a_video_index.py": "3de345de5183be3c46a675500f21d42362544ab2787e2783267a6331dc43f6e2",
+    "proposal": "a9a01aa4582b34869ba8e5570c3fdcab5ab32dff6074443b5694aae51315f41f",
+    "gate_a_plan": "f4db98f66b9f91e19f8f9fef9dd3d36beabee87e46569ea4f2057f25248259dc",
+    "aggregate_server": "b5d863564ad67ac697e096559dad5af25454a52126231217c226a34cea9f466f",
+    "aggregate_local_recomputed": "608e4f59658d4f46668fbeaa26dc80445f7620e8abb6e7e2cfa13d6bf06c936b",
+    "video_index.csv": "3ca0fc158506c73e36c96b87c61e235e1665857d8de8924ff0ad8481da97f7cf"
+  },
+  "checkpoint_sha256": {
+    "TurnOnStove_seed1_mg-300_epoch1000": "5006e920bff5763ff322729646240476cc4b3326e156e915129d50d6b6ab23e2",
+    "TurnOnSinkFaucet_seed1_mg-300_epoch1000": "0d212f6239b73beae5ec54a0ef0131fe2974e0b9bd57347599e3800a3956ab8c"
+  },
+  "remote_output_root": "/home/glp/GateA_Experiment/results/gate_a_20260912_r2",
+  "local_output_root": "/home/cwl/桌面/SkillBasin/GateA_artifacts/gate_a_20260912_r2",
+  "result_audit": {
+    "task_count": 2,
+    "scene_count": 6,
+    "candidate_rows": 192,
+    "search_rollouts": 120,
+    "validation_rollouts": 200,
+    "video_files": 320,
+    "rollout_errors": 0,
+    "positive_task_count_at_ci95_lower_gt_zero": 0,
+    "p_star_minus_p_ref_overall": 0.0,
+    "p_star_minus_strongest_simple_overall": 0.2583333333333333,
+    "p_star_minus_strongest_simple_ci95": [0.0, 0.6],
+    "decision": "no_go_gate_a_not_passed"
+  },
+  "notes": [
+    "Engineering probes and r1 outputs are excluded from scientific aggregation.",
+    "The SSH password is intentionally not recorded."
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "protocol_version": 8,
+  "protocol_name": "n2m_reachability_region",
+  "num_sampled_poses": 48,
+  "rollouts_per_pose": 5,
+  "square_side_m": 1.0,
+  "target_radius_m": 1.0,
+  "yaw_jitter_deg": 30.0,
+  "max_sampling_attempts": 5000,
+  "protocol_seed": 20260915,
+  "basin_analysis_enabled": false,
+  "basin_success_threshold": null,
+  "legacy_geometry_enabled": false,
+  "legacy_oracle_enabled": false,
+  "legacy_waypoint_ik_enabled": false
+}

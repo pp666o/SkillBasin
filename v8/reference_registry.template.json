@@ -1,0 +1,19 @@
+{
+  "schema_version": 8,
+  "registry_name": "robocasa_demo_reference_poses",
+  "coordinate_contract": "world [x_m, y_m, yaw_rad]",
+  "tasks": {
+    "TurnOnStove": {
+      "scenes": {
+        "0": {
+          "policy_seeds": {
+            "1": {
+              "reference_pose_world": [0.0, 0.0, 0.0],
+              "source": "REPLACE_WITH_DEMONSTRATION_PROVENANCE"
+            }
+          }
+        }
+      }
+    }
+  }
+}

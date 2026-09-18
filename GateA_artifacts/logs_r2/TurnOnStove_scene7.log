@@ -1,0 +1,604 @@
+[robosuite WARNING] No private macro file found! (macros.py:53)
+[robosuite WARNING] It is recommended to use a private macro file (macros.py:54)
+[robosuite WARNING] To setup, run: python /home/glp/miniforge3/envs/mobipi_gatea/lib/python3.10/site-packages/robosuite/scripts/setup_macros.py (macros.py:55)
+[robosuite WARNING] Could not import robosuite_models. Some robots may not be available. If you want to use these robots, please install robosuite_models from source (https://github.com/ARISE-Initiative/robosuite_models) or through pip install. (__init__.py:30)
+[robosuite WARNING] Could not load the mink-based whole-body IK. Make sure you install related import properly, otherwise you will not be able to use the default IK controller setting for GR1 robot. (__init__.py:40)
+/home/glp/miniforge3/envs/mobipi_gatea/lib/python3.10/site-packages/transformers/utils/generic.py:441: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/home/glp/miniforge3/envs/mobipi_gatea/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+/home/glp/miniforge3/envs/mobipi_gatea/lib/python3.10/site-packages/transformers/utils/generic.py:309: UserWarning: torch.utils._pytree._register_pytree_node is deprecated. Please use torch.utils._pytree.register_pytree_node instead.
+  _torch_pytree._register_pytree_node(
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/home/glp/miniforge3/envs/mobipi_gatea/lib/python3.10/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+/home/glp/miniforge3/envs/mobipi_gatea/lib/python3.10/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+[robosuite INFO] Loading controller configuration from: /home/glp/miniforge3/envs/mobipi_gatea/lib/python3.10/site-packages/robosuite/controllers/config/robots/default_pandaomron.json (composite_controller_factory.py:69)
+Using CUDA device 0: NVIDIA GeForce RTX 4090
+WARNING: robosuite environments not imported...
+Got error: No module named 'robosuite.environments.manipulation.single_arm_env'
+WARNING: robosuite task zoo environments not imported, possibly because robosuite_task_zoo is not installed...
+Got error: No module named 'robosuite.environments.manipulation.single_arm_env'
+ROBOMIMIC WARNING(
+    No private macro file found!
+    It is recommended to use a private macro file
+    To setup, run: python /home/glp/GateA_Experiment/mobipi/external/robomimic/robomimic/scripts/setup_macros.py
+)
+Searching for policy in regex [/home/glp/GateA_Experiment/mobipi/ckpts/robocasa/bc_xfmr/*-TurnOnStove/seed_1_*_mg-300/*/models/model_epoch_*.pth]
+Loading config at /home/glp/GateA_Experiment/mobipi/ckpts/robocasa/bc_xfmr/04-12-TurnOnStove/seed_1_TurnOnStove_mg-300/20250413055045/models/../config.json
+
+============= Initialized Observation Utils with Obs Spec =============
+
+using obs modality: low_dim with keys: ['robot0_base_pos', 'robot0_base_to_eef_pos', 'robot0_gripper_qpos', 'robot0_base_to_eef_quat', 'robot0_base_quat']
+using obs modality: rgb with keys: ['robot0_agentview_left_image', 'robot0_agentview_right_image', 'robot0_eye_in_hand_image']
+using obs modality: depth with keys: []
+using obs modality: scan with keys: []
+Created GPT_Backbone model with number of parameters: 18906112
+Created environment with name TurnOnStove
+Action size is 12
+Scene 7 episode language: turn on the rear left burner of the stove
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_00/rollout_00/TurnOnStove_epoch_rollout_00.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:40<00:00, 40.54s/it]100%|██████████| 1/1 [00:40<00:00, 40.54s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_00/rollout_01/TurnOnStove_epoch_rollout_01.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:38<00:00, 38.74s/it]100%|██████████| 1/1 [00:38<00:00, 38.74s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_00/rollout_02/TurnOnStove_epoch_rollout_02.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:38<00:00, 38.50s/it]100%|██████████| 1/1 [00:38<00:00, 38.51s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_01/rollout_00/TurnOnStove_epoch_rollout_00.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:37<00:00, 37.70s/it]100%|██████████| 1/1 [00:37<00:00, 37.70s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_01/rollout_01/TurnOnStove_epoch_rollout_01.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:37<00:00, 37.71s/it]100%|██████████| 1/1 [00:37<00:00, 37.72s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_01/rollout_02/TurnOnStove_epoch_rollout_02.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:38<00:00, 38.18s/it]100%|██████████| 1/1 [00:38<00:00, 38.19s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_07/rollout_00/TurnOnStove_epoch_rollout_00.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:36<00:00, 36.91s/it]100%|██████████| 1/1 [00:36<00:00, 36.91s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_07/rollout_01/TurnOnStove_epoch_rollout_01.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:38<00:00, 38.24s/it]100%|██████████| 1/1 [00:38<00:00, 38.25s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_07/rollout_02/TurnOnStove_epoch_rollout_02.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:37<00:00, 37.32s/it]100%|██████████| 1/1 [00:37<00:00, 37.32s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_11/rollout_00/TurnOnStove_epoch_rollout_00.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:37<00:00, 37.23s/it]100%|██████████| 1/1 [00:37<00:00, 37.23s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_11/rollout_01/TurnOnStove_epoch_rollout_01.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:38<00:00, 38.21s/it]100%|██████████| 1/1 [00:38<00:00, 38.21s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_11/rollout_02/TurnOnStove_epoch_rollout_02.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:37<00:00, 37.93s/it]100%|██████████| 1/1 [00:37<00:00, 37.93s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_14/rollout_00/TurnOnStove_epoch_rollout_00.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:38<00:00, 38.38s/it]100%|██████████| 1/1 [00:38<00:00, 38.38s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_14/rollout_01/TurnOnStove_epoch_rollout_01.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:39<00:00, 39.02s/it]100%|██████████| 1/1 [00:39<00:00, 39.02s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_14/rollout_02/TurnOnStove_epoch_rollout_02.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:38<00:00, 38.44s/it]100%|██████████| 1/1 [00:38<00:00, 38.44s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_16/rollout_00/TurnOnStove_epoch_rollout_00.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:38<00:00, 38.03s/it]100%|██████████| 1/1 [00:38<00:00, 38.03s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_16/rollout_01/TurnOnStove_epoch_rollout_01.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:39<00:00, 39.15s/it]100%|██████████| 1/1 [00:39<00:00, 39.15s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_16/rollout_02/TurnOnStove_epoch_rollout_02.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:37<00:00, 37.18s/it]100%|██████████| 1/1 [00:37<00:00, 37.18s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_17/rollout_00/TurnOnStove_epoch_rollout_00.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:38<00:00, 38.60s/it]100%|██████████| 1/1 [00:38<00:00, 38.60s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_17/rollout_01/TurnOnStove_epoch_rollout_01.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:38<00:00, 38.85s/it]100%|██████████| 1/1 [00:38<00:00, 38.85s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_17/rollout_02/TurnOnStove_epoch_rollout_02.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:39<00:00, 39.46s/it]100%|██████████| 1/1 [00:39<00:00, 39.46s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_21/rollout_00/TurnOnStove_epoch_rollout_00.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:37<00:00, 37.92s/it]100%|██████████| 1/1 [00:37<00:00, 37.92s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_21/rollout_01/TurnOnStove_epoch_rollout_01.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:37<00:00, 37.41s/it]100%|██████████| 1/1 [00:37<00:00, 37.41s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_21/rollout_02/TurnOnStove_epoch_rollout_02.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:39<00:00, 39.81s/it]100%|██████████| 1/1 [00:39<00:00, 39.81s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_22/rollout_00/TurnOnStove_epoch_rollout_00.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:37<00:00, 37.40s/it]100%|██████████| 1/1 [00:37<00:00, 37.40s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_22/rollout_01/TurnOnStove_epoch_rollout_01.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:37<00:00, 37.67s/it]100%|██████████| 1/1 [00:37<00:00, 37.67s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_22/rollout_02/TurnOnStove_epoch_rollout_02.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:37<00:00, 37.32s/it]100%|██████████| 1/1 [00:37<00:00, 37.32s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_23/rollout_00/TurnOnStove_epoch_rollout_00.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:36<00:00, 36.90s/it]100%|██████████| 1/1 [00:36<00:00, 36.90s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_23/rollout_01/TurnOnStove_epoch_rollout_01.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:34<00:00, 34.63s/it]100%|██████████| 1/1 [00:34<00:00, 34.63s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_23/rollout_02/TurnOnStove_epoch_rollout_02.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:35<00:00, 35.79s/it]100%|██████████| 1/1 [00:35<00:00, 35.79s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_25/rollout_00/TurnOnStove_epoch_rollout_00.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:35<00:00, 35.76s/it]100%|██████████| 1/1 [00:35<00:00, 35.76s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_25/rollout_01/TurnOnStove_epoch_rollout_01.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:34<00:00, 34.81s/it]100%|██████████| 1/1 [00:34<00:00, 34.81s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/candidate_25/rollout_02/TurnOnStove_epoch_rollout_02.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:35<00:00, 35.17s/it]100%|██████████| 1/1 [00:35<00:00, 35.17s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_00/rollout_00/TurnOnStove_epoch_rollout_00.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:35<00:00, 35.87s/it]100%|██████████| 1/1 [00:35<00:00, 35.87s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_00/rollout_01/TurnOnStove_epoch_rollout_01.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:35<00:00, 35.24s/it]100%|██████████| 1/1 [00:35<00:00, 35.24s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_00/rollout_02/TurnOnStove_epoch_rollout_02.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:35<00:00, 35.34s/it]100%|██████████| 1/1 [00:35<00:00, 35.34s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_00/rollout_03/TurnOnStove_epoch_rollout_03.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:35<00:00, 35.33s/it]100%|██████████| 1/1 [00:35<00:00, 35.34s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_00/rollout_04/TurnOnStove_epoch_rollout_04.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:36<00:00, 36.81s/it]100%|██████████| 1/1 [00:36<00:00, 36.81s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_00/rollout_05/TurnOnStove_epoch_rollout_05.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:35<00:00, 35.70s/it]100%|██████████| 1/1 [00:35<00:00, 35.70s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_00/rollout_06/TurnOnStove_epoch_rollout_06.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:35<00:00, 35.11s/it]100%|██████████| 1/1 [00:35<00:00, 35.11s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_00/rollout_07/TurnOnStove_epoch_rollout_07.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:36<00:00, 36.24s/it]100%|██████████| 1/1 [00:36<00:00, 36.24s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_00/rollout_08/TurnOnStove_epoch_rollout_08.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:34<00:00, 34.56s/it]100%|██████████| 1/1 [00:34<00:00, 34.56s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_00/rollout_09/TurnOnStove_epoch_rollout_09.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:34<00:00, 34.47s/it]100%|██████████| 1/1 [00:34<00:00, 34.47s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_00/rollout_10/TurnOnStove_epoch_rollout_10.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:34<00:00, 34.09s/it]100%|██████████| 1/1 [00:34<00:00, 34.09s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_00/rollout_11/TurnOnStove_epoch_rollout_11.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:34<00:00, 34.04s/it]100%|██████████| 1/1 [00:34<00:00, 34.04s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_00/rollout_12/TurnOnStove_epoch_rollout_12.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:34<00:00, 34.56s/it]100%|██████████| 1/1 [00:34<00:00, 34.57s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_00/rollout_13/TurnOnStove_epoch_rollout_13.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:33<00:00, 33.95s/it]100%|██████████| 1/1 [00:33<00:00, 33.95s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_00/rollout_14/TurnOnStove_epoch_rollout_14.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:34<00:00, 34.14s/it]100%|██████████| 1/1 [00:34<00:00, 34.14s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_00/rollout_15/TurnOnStove_epoch_rollout_15.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:34<00:00, 34.32s/it]100%|██████████| 1/1 [00:34<00:00, 34.32s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_00/rollout_16/TurnOnStove_epoch_rollout_16.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:34<00:00, 34.15s/it]100%|██████████| 1/1 [00:34<00:00, 34.15s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_00/rollout_17/TurnOnStove_epoch_rollout_17.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:34<00:00, 34.44s/it]100%|██████████| 1/1 [00:34<00:00, 34.44s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_00/rollout_18/TurnOnStove_epoch_rollout_18.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:34<00:00, 34.34s/it]100%|██████████| 1/1 [00:34<00:00, 34.34s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_00/rollout_19/TurnOnStove_epoch_rollout_19.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:34<00:00, 34.16s/it]100%|██████████| 1/1 [00:34<00:00, 34.16s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_21/rollout_00/TurnOnStove_epoch_rollout_00.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:34<00:00, 34.10s/it]100%|██████████| 1/1 [00:34<00:00, 34.11s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_21/rollout_01/TurnOnStove_epoch_rollout_01.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:33<00:00, 33.66s/it]100%|██████████| 1/1 [00:33<00:00, 33.66s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_21/rollout_02/TurnOnStove_epoch_rollout_02.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:33<00:00, 33.33s/it]100%|██████████| 1/1 [00:33<00:00, 33.34s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_21/rollout_03/TurnOnStove_epoch_rollout_03.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:33<00:00, 33.64s/it]100%|██████████| 1/1 [00:33<00:00, 33.64s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_21/rollout_04/TurnOnStove_epoch_rollout_04.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:34<00:00, 34.16s/it]100%|██████████| 1/1 [00:34<00:00, 34.16s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_21/rollout_05/TurnOnStove_epoch_rollout_05.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:34<00:00, 34.11s/it]100%|██████████| 1/1 [00:34<00:00, 34.11s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_21/rollout_06/TurnOnStove_epoch_rollout_06.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:33<00:00, 33.73s/it]100%|██████████| 1/1 [00:33<00:00, 33.74s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_21/rollout_07/TurnOnStove_epoch_rollout_07.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:34<00:00, 34.21s/it]100%|██████████| 1/1 [00:34<00:00, 34.21s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_21/rollout_08/TurnOnStove_epoch_rollout_08.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:33<00:00, 33.60s/it]100%|██████████| 1/1 [00:33<00:00, 33.60s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_21/rollout_09/TurnOnStove_epoch_rollout_09.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:34<00:00, 34.05s/it]100%|██████████| 1/1 [00:34<00:00, 34.05s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_21/rollout_10/TurnOnStove_epoch_rollout_10.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:34<00:00, 34.27s/it]100%|██████████| 1/1 [00:34<00:00, 34.27s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_21/rollout_11/TurnOnStove_epoch_rollout_11.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:34<00:00, 34.31s/it]100%|██████████| 1/1 [00:34<00:00, 34.32s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_21/rollout_12/TurnOnStove_epoch_rollout_12.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:34<00:00, 34.05s/it]100%|██████████| 1/1 [00:34<00:00, 34.05s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_21/rollout_13/TurnOnStove_epoch_rollout_13.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:33<00:00, 33.67s/it]100%|██████████| 1/1 [00:33<00:00, 33.67s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_21/rollout_14/TurnOnStove_epoch_rollout_14.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:34<00:00, 34.32s/it]100%|██████████| 1/1 [00:34<00:00, 34.32s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_21/rollout_15/TurnOnStove_epoch_rollout_15.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:34<00:00, 34.22s/it]100%|██████████| 1/1 [00:34<00:00, 34.22s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_21/rollout_16/TurnOnStove_epoch_rollout_16.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:33<00:00, 33.88s/it]100%|██████████| 1/1 [00:33<00:00, 33.88s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_21/rollout_17/TurnOnStove_epoch_rollout_17.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:33<00:00, 33.96s/it]100%|██████████| 1/1 [00:33<00:00, 33.96s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_21/rollout_18/TurnOnStove_epoch_rollout_18.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:33<00:00, 33.69s/it]100%|██████████| 1/1 [00:33<00:00, 33.70s/it]
+video writes to /home/glp/GateA_Experiment/results/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/scene_7/validation_candidate_21/rollout_19/TurnOnStove_epoch_rollout_19.mp4
+rollout: env=TurnOnStove, horizon=500, use_goals=False, num_episodes=1
+  0%|          | 0/1 [00:00<?, ?it/s]huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+100%|██████████| 1/1 [00:32<00:00, 32.87s/it]100%|██████████| 1/1 [00:32<00:00, 32.87s/it]
+{
+  "TurnOnStove": [
+    {
+      "task": "TurnOnStove",
+      "scene_id": 7,
+      "p_ref_candidate_id": 0,
+      "p_near_candidate_id": 0,
+      "p_IK_candidate_id": 21,
+      "p_star_candidate_id": 0,
+      "p_ref_pose": [
+        0.859989618801439,
+        -1.5738021507971913,
+        3.1415963267948968
+      ],
+      "p_near_pose": [
+        0.859989618801439,
+        -1.5738021507971913,
+        3.1415963267948968
+      ],
+      "p_IK_pose": [
+        1.2995234482800622,
+        -1.912583894411834,
+        -2.879793265790642
+      ],
+      "p_star_pose": [
+        0.859989618801439,
+        -1.5738021507971913,
+        3.1415963267948968
+      ],
+      "p_ref_success_rate": 0.0,
+      "p_near_success_rate": 0.0,
+      "p_IK_success_rate": 0.0,
+      "p_star_success_rate": 0.0,
+      "eligible_candidates": 11,
+      "evaluated_rollouts": 33,
+      "generated_candidates": 32,
+      "successful_rollouts": 0,
+      "p_star_minus_p_near": 0.0,
+      "p_star_minus_p_IK": 0.0,
+      "p_star_minus_strongest_simple": 0.0,
+      "p_star_minus_p_ref": 0.0,
+      "validation_rollouts_per_unique_baseline": 20,
+      "p_ref_validation_success_rate": 0.0,
+      "p_near_validation_success_rate": 0.0,
+      "p_IK_validation_success_rate": 0.0,
+      "p_star_validation_success_rate": 0.0,
+      "validation_p_star_minus_strongest_simple": 0.0
+    }
+  ]
+}

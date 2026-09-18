@@ -1,0 +1,58 @@
+{
+  "schema_version": 7,
+  "experiment_id": "gate_a_v7_test",
+  "status": "implementation_ready_requires_asset_calibration",
+  "research_question": "Within a geometry-feasible pose set, does frozen-policy success vary, and how much headroom remains between the strongest geometry-only selection and a sampled empirical policy oracle?",
+  "main_definitions": {
+    "p_train": "Audited demonstration SE(2) medoid, transformed to the scene using the same contact-point/fixture-yaw coordinate contract.",
+    "p_geom": "Maximum fixed geometric score in the geometry-feasible sampled pool; selected before either pose is executed.",
+    "p_oracle": "Post-hoc empirical best pose within the rollout-labelled sample of the geometry-feasible pool; discovery and validation seeds are independent.",
+    "p_mobipi": "Optional audited Mobi-pi selector output, reported when present in the pose registry.",
+    "H_geom": "S_val(p_oracle) - S_val(p_geom), signed and measured using paired validation seeds."
+  },
+  "candidate_protocol": {
+    "generation": "0.10 m floor grid with target-facing headings plus training-pose local samples; no radial hard cutoff.",
+    "maximum_exact_filter_candidates": 2500,
+    "rollout_search": "Only for GT-basin construction and p_oracle discovery; never used by p_geom.",
+    "adaptive_candidate_selection": false,
+    "training_pose_is_always_evaluated": true,
+    "training_pose_need_not_pass_approximate_ik": true,
+    "training_pose_initial_collision_is_an_error": true
+  },
+  "geometry": {
+    "calibration": "Reviewed geom/site-local contact point, outward approach normal and full EEF target rotation, resolved on the current asset.",
+    "hard_feasibility": "Base footprint valid, no initial blocking robot collision, rendered target visibility at least 0.50, and near-contact positional IK residual at most 0.08 m.",
+    "diagnostics": "Four sequential pre-contact 6D IK poses, orientation residuals, joint margins, manipulability, contact alignment, and joint-interpolation collision checks. Strict trajectory success is not a hard gate.",
+    "position_tolerance_m": 0.01,
+    "orientation_tolerance_deg": 10,
+    "maximum_joint_interpolation_step_rad": 0.025,
+    "penetration_tolerance_m": 0.002,
+    "scope": "Relaxed geometric reachability plus continuous approach-quality diagnostics; no guarantee of complete actuation or global IK completeness.",
+    "score": "Per-scene min-max equal-weight score over target distance, depth-patch visibility, joint margin, position residual, rotation residual, contact alignment, and full-Jacobian manipulability."
+  },
+    "evaluation": {
+    "labels": ["p_geom", "p_train", "p_oracle", "optional:p_mobipi"],
+    "basin_candidates": 64,
+    "basin_rollouts_per_candidate": 10,
+    "validation_rollouts_per_unique_selected_pose": 20,
+    "maximum_basin_rollouts_per_scene_policy": 640,
+    "maximum_validation_rollouts_per_scene_policy": 80,
+    "maximum_total_rollouts_per_scene_policy": 720,
+    "oracle_selection_phase": 2,
+    "final_validation_phase": 3,
+    "oracle_selection_and_validation_seeds_are_independent": true,
+    "selected_pose_validation_uses_paired_seeds": true,
+    "old_result_compatibility": "Reject pre-v7 and unversioned validation CSV files.",
+    "same_pose_shared_execution": true,
+    "bootstrap_samples": 20000,
+    "runtime_error": "Abort shard; never count as policy failure.",
+    "per_scene_evidence": ["gt_basin.csv", "geometry_vs_policy_success.png", "summary.json"]
+  },
+  "gate_decision": {
+    "minimum_effect": 0.10,
+    "minimum_oracle_success": 0.20,
+    "required_positive_tasks": 2,
+    "test_split_only": true,
+    "interpretation": "Primary evidence is the rollout-labelled G(p) versus S_pi(p) sample and its mixed basin membership. H_geom summarizes policy-specific headroom against the strongest fixed geometry-only baseline. The empirical oracle is limited to the sampled geometry-feasible poses."
+  }
+}

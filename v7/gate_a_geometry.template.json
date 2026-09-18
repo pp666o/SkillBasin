@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "tasks": {
+    "TurnOnMicrowave": {
+      "default": {
+        "reviewed": false,
+        "source": "",
+        "frame_type": "geom",
+        "frame_name": "{prefix}start_button",
+        "point_local": [0, 0, 0],
+        "normal_local": [0, -1, 0],
+        "eef_rotation_local": [[1,0,0],[0,1,0],[0,0,1]],
+        "approach_distance_m": 0.10,
+        "precontact_clearance_m": 0.015
+      }
+    }
+  }
+}

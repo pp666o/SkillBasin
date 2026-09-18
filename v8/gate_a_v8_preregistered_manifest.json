@@ -1,0 +1,30 @@
+{
+  "protocol_version": 8,
+  "research_question": "Within the fixed N2M-style reachability region, how pose-dependent is the frozen manipulation policy, and how much success does naive reachability initialization lose relative to the rollout-independent RoboCasa reference pose?",
+  "candidate_region": {
+    "translation": "1 m-radius circle around task target intersected with 1 m x 1 m square around reference pose",
+    "yaw": "reference yaw plus Uniform(-30 deg, +30 deg)",
+    "rejections": [
+      "outside target-radius intersection",
+      "base footprint collision or outside floor",
+      "simulator reset/spawn error",
+      "mobile-base penetration excluding normal floor support"
+    ]
+  },
+  "evaluation": {
+    "sampled_poses": 48,
+    "rollouts_per_pose": 5,
+    "reference_rollouts": 5,
+    "seed_contract": "identical K rollout seeds for every sampled pose and the reference pose",
+    "primary_metrics": ["SR_reach", "SR_ref", "Delta_reach = SR_ref - SR_reach"],
+    "descriptive_pose_variation": ["min", "max", "mean", "std", "median", "q25", "q75", "range", "zero_count", "full_count"]
+  },
+  "disabled_by_default": {
+    "basin_threshold_analysis": true,
+    "geometry_ranking": true,
+    "empirical_best_pose_selection": true,
+    "waypoint_ik_filtering": true,
+    "visibility_or_manipulability_ranking": true
+  },
+  "interpretation_guardrail": "The sampled maximum is descriptive only and is never used to select or reevaluate a pose."
+}

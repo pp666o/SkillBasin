@@ -1,0 +1,328 @@
+{
+  "audit": {
+    "task_count": 2,
+    "scene_count": 6,
+    "candidate_rows": 192,
+    "validation_rows": 200,
+    "validation_rollout_errors": 0,
+    "tasks_with_positive_headroom_ci_lower_bound": [],
+    "positive_task_count": 0
+  },
+  "per_scene": [
+    {
+      "task": "TurnOnSinkFaucet",
+      "scene_id": 1,
+      "p_ref": 0.6,
+      "p_near": 0.05,
+      "p_IK": 0.05,
+      "p_star": 0.6,
+      "p_star_minus_p_ref": 0.0,
+      "p_star_minus_p_near": 0.5499999999999999,
+      "p_star_minus_p_IK": 0.5499999999999999,
+      "p_star_minus_strongest_simple": 0.5499999999999999,
+      "geometry_diagnostics": {
+        "evaluated_candidates": 3,
+        "success_vs_nearer_spearman": -0.5000000000000001,
+        "success_vs_IK_margin_spearman": 0.0,
+        "success_vs_visibility_margin_spearman": 0.0
+      },
+      "audit": {
+        "generated_candidates": 32,
+        "strict_eligible_candidates": 3,
+        "evaluated_candidates": 4,
+        "search_rollouts": 12,
+        "validation_rollouts": 40,
+        "validation_rollout_errors": 0,
+        "unique_validation_candidates": 2
+      }
+    },
+    {
+      "task": "TurnOnSinkFaucet",
+      "scene_id": 4,
+      "p_ref": 1.0,
+      "p_near": 1.0,
+      "p_IK": 1.0,
+      "p_star": 1.0,
+      "p_star_minus_p_ref": 0.0,
+      "p_star_minus_p_near": 0.0,
+      "p_star_minus_p_IK": 0.0,
+      "p_star_minus_strongest_simple": 0.0,
+      "geometry_diagnostics": {
+        "evaluated_candidates": 3,
+        "success_vs_nearer_spearman": 0.8660254037844387,
+        "success_vs_IK_margin_spearman": 0.8660254037844387,
+        "success_vs_visibility_margin_spearman": 0.8660254037844387
+      },
+      "audit": {
+        "generated_candidates": 32,
+        "strict_eligible_candidates": 3,
+        "evaluated_candidates": 3,
+        "search_rollouts": 9,
+        "validation_rollouts": 20,
+        "validation_rollout_errors": 0,
+        "unique_validation_candidates": 1
+      }
+    },
+    {
+      "task": "TurnOnSinkFaucet",
+      "scene_id": 7,
+      "p_ref": 1.0,
+      "p_near": 1.0,
+      "p_IK": 1.0,
+      "p_star": 1.0,
+      "p_star_minus_p_ref": 0.0,
+      "p_star_minus_p_near": 0.0,
+      "p_star_minus_p_IK": 0.0,
+      "p_star_minus_strongest_simple": 0.0,
+      "geometry_diagnostics": {
+        "evaluated_candidates": 5,
+        "success_vs_nearer_spearman": 0.7254762501100117,
+        "success_vs_IK_margin_spearman": 0.7071067811865475,
+        "success_vs_visibility_margin_spearman": 0.7071067811865475
+      },
+      "audit": {
+        "generated_candidates": 32,
+        "strict_eligible_candidates": 5,
+        "evaluated_candidates": 5,
+        "search_rollouts": 15,
+        "validation_rollouts": 20,
+        "validation_rollout_errors": 0,
+        "unique_validation_candidates": 1
+      }
+    },
+    {
+      "task": "TurnOnStove",
+      "scene_id": 1,
+      "p_ref": 1.0,
+      "p_near": 0.0,
+      "p_IK": 0.0,
+      "p_star": 1.0,
+      "p_star_minus_p_ref": 0.0,
+      "p_star_minus_p_near": 1.0,
+      "p_star_minus_p_IK": 1.0,
+      "p_star_minus_strongest_simple": 1.0,
+      "geometry_diagnostics": {
+        "evaluated_candidates": 13,
+        "success_vs_nearer_spearman": null,
+        "success_vs_IK_margin_spearman": null,
+        "success_vs_visibility_margin_spearman": null
+      },
+      "audit": {
+        "generated_candidates": 32,
+        "strict_eligible_candidates": 13,
+        "evaluated_candidates": 14,
+        "search_rollouts": 42,
+        "validation_rollouts": 60,
+        "validation_rollout_errors": 0,
+        "unique_validation_candidates": 3
+      }
+    },
+    {
+      "task": "TurnOnStove",
+      "scene_id": 4,
+      "p_ref": 0.0,
+      "p_near": 0.0,
+      "p_IK": 0.0,
+      "p_star": 0.0,
+      "p_star_minus_p_ref": 0.0,
+      "p_star_minus_p_near": 0.0,
+      "p_star_minus_p_IK": 0.0,
+      "p_star_minus_strongest_simple": 0.0,
+      "geometry_diagnostics": {
+        "evaluated_candidates": 3,
+        "success_vs_nearer_spearman": null,
+        "success_vs_IK_margin_spearman": null,
+        "success_vs_visibility_margin_spearman": null
+      },
+      "audit": {
+        "generated_candidates": 32,
+        "strict_eligible_candidates": 3,
+        "evaluated_candidates": 3,
+        "search_rollouts": 9,
+        "validation_rollouts": 20,
+        "validation_rollout_errors": 0,
+        "unique_validation_candidates": 1
+      }
+    },
+    {
+      "task": "TurnOnStove",
+      "scene_id": 7,
+      "p_ref": 0.0,
+      "p_near": 0.0,
+      "p_IK": 0.0,
+      "p_star": 0.0,
+      "p_star_minus_p_ref": 0.0,
+      "p_star_minus_p_near": 0.0,
+      "p_star_minus_p_IK": 0.0,
+      "p_star_minus_strongest_simple": 0.0,
+      "geometry_diagnostics": {
+        "evaluated_candidates": 11,
+        "success_vs_nearer_spearman": null,
+        "success_vs_IK_margin_spearman": null,
+        "success_vs_visibility_margin_spearman": null
+      },
+      "audit": {
+        "generated_candidates": 32,
+        "strict_eligible_candidates": 11,
+        "evaluated_candidates": 11,
+        "search_rollouts": 33,
+        "validation_rollouts": 40,
+        "validation_rollout_errors": 0,
+        "unique_validation_candidates": 2
+      }
+    }
+  ],
+  "per_task": {
+    "TurnOnSinkFaucet": {
+      "p_ref": 0.8666666666666667,
+      "p_near": 0.6833333333333332,
+      "p_IK": 0.6833333333333332,
+      "p_star": 0.8666666666666667,
+      "p_star_minus_p_ref": 0.0,
+      "p_star_minus_p_near": 0.18333333333333332,
+      "p_star_minus_p_IK": 0.18333333333333332,
+      "p_star_minus_strongest_simple": 0.18333333333333332,
+      "ci95": {
+        "p_ref": [
+          0.6166666666666667,
+          1.0
+        ],
+        "p_near": [
+          0.06666666666666667,
+          1.0
+        ],
+        "p_IK": [
+          0.06666666666666667,
+          1.0
+        ],
+        "p_star": [
+          0.6166666666666667,
+          1.0
+        ],
+        "p_star_minus_p_ref": [
+          0.0,
+          0.0
+        ],
+        "p_star_minus_p_near": [
+          0.0,
+          0.5333333333333333
+        ],
+        "p_star_minus_p_IK": [
+          0.0,
+          0.5333333333333333
+        ],
+        "p_star_minus_strongest_simple": [
+          0.0,
+          0.5333333333333333
+        ]
+      },
+      "scene_count": 3
+    },
+    "TurnOnStove": {
+      "p_ref": 0.3333333333333333,
+      "p_near": 0.0,
+      "p_IK": 0.0,
+      "p_star": 0.3333333333333333,
+      "p_star_minus_p_ref": 0.0,
+      "p_star_minus_p_near": 0.3333333333333333,
+      "p_star_minus_p_IK": 0.3333333333333333,
+      "p_star_minus_strongest_simple": 0.3333333333333333,
+      "ci95": {
+        "p_ref": [
+          0.0,
+          1.0
+        ],
+        "p_near": [
+          0.0,
+          0.0
+        ],
+        "p_IK": [
+          0.0,
+          0.0
+        ],
+        "p_star": [
+          0.0,
+          1.0
+        ],
+        "p_star_minus_p_ref": [
+          0.0,
+          0.0
+        ],
+        "p_star_minus_p_near": [
+          0.0,
+          1.0
+        ],
+        "p_star_minus_p_IK": [
+          0.0,
+          1.0
+        ],
+        "p_star_minus_strongest_simple": [
+          0.0,
+          1.0
+        ]
+      },
+      "scene_count": 3
+    }
+  },
+  "overall": {
+    "p_ref": 0.6,
+    "p_near": 0.3416666666666666,
+    "p_IK": 0.3416666666666666,
+    "p_star": 0.6,
+    "p_star_minus_p_ref": 0.0,
+    "p_star_minus_p_near": 0.2583333333333333,
+    "p_star_minus_p_IK": 0.2583333333333333,
+    "p_star_minus_strongest_simple": 0.2583333333333333,
+    "ci95": {
+      "p_ref": [
+        0.24166666666666667,
+        0.9416666666666668
+      ],
+      "p_near": [
+        0.0,
+        0.6833333333333332
+      ],
+      "p_IK": [
+        0.0,
+        0.6833333333333332
+      ],
+      "p_star": [
+        0.24166666666666667,
+        0.9416666666666668
+      ],
+      "p_star_minus_p_ref": [
+        0.0,
+        0.0
+      ],
+      "p_star_minus_p_near": [
+        0.0,
+        0.6
+      ],
+      "p_star_minus_p_IK": [
+        0.0,
+        0.6
+      ],
+      "p_star_minus_strongest_simple": [
+        0.0,
+        0.6
+      ]
+    },
+    "scene_count": 6
+  },
+  "source_files": [
+    "GateA_artifacts/gate_a_20260912_r2/TurnOnSinkFaucet_scene1/TurnOnSinkFaucet/validation_rollouts.csv",
+    "GateA_artifacts/gate_a_20260912_r2/TurnOnSinkFaucet_scene4/TurnOnSinkFaucet/validation_rollouts.csv",
+    "GateA_artifacts/gate_a_20260912_r2/TurnOnSinkFaucet_scene7/TurnOnSinkFaucet/validation_rollouts.csv",
+    "GateA_artifacts/gate_a_20260912_r2/TurnOnStove_scene1/TurnOnStove/validation_rollouts.csv",
+    "GateA_artifacts/gate_a_20260912_r2/TurnOnStove_scene4/TurnOnStove/validation_rollouts.csv",
+    "GateA_artifacts/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/validation_rollouts.csv"
+  ],
+  "candidate_source_files": [
+    "GateA_artifacts/gate_a_20260912_r2/TurnOnSinkFaucet_scene1/TurnOnSinkFaucet/candidates_all.csv",
+    "GateA_artifacts/gate_a_20260912_r2/TurnOnSinkFaucet_scene4/TurnOnSinkFaucet/candidates_all.csv",
+    "GateA_artifacts/gate_a_20260912_r2/TurnOnSinkFaucet_scene7/TurnOnSinkFaucet/candidates_all.csv",
+    "GateA_artifacts/gate_a_20260912_r2/TurnOnStove_scene1/TurnOnStove/candidates_all.csv",
+    "GateA_artifacts/gate_a_20260912_r2/TurnOnStove_scene4/TurnOnStove/candidates_all.csv",
+    "GateA_artifacts/gate_a_20260912_r2/TurnOnStove_scene7/TurnOnStove/candidates_all.csv"
+  ]
+}
